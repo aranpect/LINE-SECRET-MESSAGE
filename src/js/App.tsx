@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 function App() {
   const [inputValue, setInputValue] = useState('');

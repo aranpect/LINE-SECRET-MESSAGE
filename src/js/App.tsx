@@ -31,7 +31,7 @@ function App() {
     </header>
     <div>
       <div className='width-50 left-color'>
-        <label htmlFor="input">変える文をに入力:</label>
+        <label htmlFor="input">変える文を入力:</label>
         <input id="input" type="text" value={inputValue} onChange={handleInputChange} />
         <button onClick={handleEncodeClick}>変換する</button>
         {encodedValue && <p>{encodedValue}</p>}
@@ -43,6 +43,9 @@ function App() {
         {decodedValue && <p>{decodedValue}</p>}
       </div>
     </div>
+    <footer>
+      <p className="text-center">©Aranpect</p>
+    </footer>
     </div>
   );
 }

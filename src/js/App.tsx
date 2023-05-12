@@ -54,8 +54,23 @@ function App() {
         <p>ぜひ、お友達にも拡散してくださいね</p>
       </div>
     </section>
+    <section>
+      <div>
+        <h2>その他のコマンド一覧とコピーボタン(開発中)</h2>
+        <div className='flex'>
+          <div className='w-1/2'>
+            <p>カメラ起動のコマンド</p>
+            <button className='mini-buttom'>クリックでコピー</button>
+          </div>
+          <div className='w-1/2'>
+            <p>オープンチャット参加のコマンド</p>
+            <button className='mini-buttom'>クリックでコピー</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
-      <p className="text-center">©2023 Aranpect all right reserved</p>
+      <p className="text-center">©2023 Aranpect All Right Reserved</p>
     </footer>
     </div>
   );

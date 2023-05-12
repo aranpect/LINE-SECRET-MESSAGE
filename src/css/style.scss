@@ -25,6 +25,7 @@
 html,
 body {
   @apply h-full m-0;
+  padding-top: 30px;
 }
 
 .flex{
@@ -35,12 +36,13 @@ body {
   width: 95%;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin: auto;
   border: solid;
   border-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 15px;
+  border-width: 4px;
 }
 
 .left-color{
@@ -100,6 +102,11 @@ button {
   border-radius: 5px;
   /* カーソル */
   cursor: pointer;
+  width: 100%;
+}
+
+button:hover{
+  background-color: #006400;
 }
 
 .syoukai{
@@ -108,8 +115,24 @@ button {
   border-radius: 5px;
   margin: auto;
   width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 h2{
   font-size: 25px;
+  text-align: center;
+}
+
+.mini-buttom{
+  width: 70% !important;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

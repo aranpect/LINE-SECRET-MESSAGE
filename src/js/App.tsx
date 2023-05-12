@@ -12,7 +12,7 @@ function App() {
   };
 
   const handleEncodeClick = () => {
-    const encoded = encodeURIComponent(inputValue+"　君も使おう>>aranpectで検索<<");
+    const encoded = encodeURIComponent(inputValue);
     navigator.clipboard.writeText("line://share?text="+encoded)
     Swal.fire("変換しコピーしました");
     setEncodedValue("変換しコピーしました");

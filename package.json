@@ -36,6 +36,7 @@
     "postcss-preset-env": "^8.0.0",
     "react-device-detect": "^2.2.2",
     "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.7.5",
     "tailwindcss": "^3.2.4",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"

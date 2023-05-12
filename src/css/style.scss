@@ -35,7 +35,12 @@ body {
   width: 90%;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 3px;
+  padding-left: 3px;
   margin: auto;
+  border: solid;
+  border-color: #ffffff;
+  border-radius: 3px;
 }
 
 .left-color{
@@ -46,10 +51,27 @@ body {
   background-color: bisque;
 }
 
-input{
-  border-color: black;
-  border: 3px;
+/* 基本的な input スタイル */
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
 }
+
+/* フォーカス時のスタイル */
+input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.4);
+}
+
+/* 無効な入力時のスタイル */
+input:invalid {
+  border-color: #cc0000;
+}
+
 
 h1{
   text-align: center;
@@ -60,4 +82,22 @@ h1{
 
 p{
   text-align: center;
+}
+
+/* ボタンのスタイル */
+button {
+  /* 背景色 */
+  background-color: #4CAF50;
+  /* テキストの色 */
+  color: white;
+  /* フォントサイズ */
+  font-size: 16px;
+  /* パディング */
+  padding: 10px 20px;
+  /* ボーダー */
+  border: none;
+  /* 角丸 */
+  border-radius: 5px;
+  /* カーソル */
+  cursor: pointer;
 }

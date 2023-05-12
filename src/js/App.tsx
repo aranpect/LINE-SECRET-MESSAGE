@@ -31,18 +31,29 @@ function App() {
     </header>
     <div>
       <div className='width-50 left-color'>
-        <label htmlFor="input">変える文を入力:</label>
+        <p>下に変換したい文を入力</p>
         <input id="input" type="text" value={inputValue} onChange={handleInputChange} />
         <button onClick={handleEncodeClick}>変換する</button>
         {encodedValue && <p>{encodedValue}</p>}
       </div>
       <div className='width-50 right-color'>
-        <label htmlFor="encoded">直す文を入力:</label>
+        <p>下に直したい文章を入力</p>
         <input id="encoded" type="text" value={encodedValue1} onChange={(e) => setEncodedValue1(e.target.value)} />
         <button onClick={handleDecodeClick}>変換する</button>
         {decodedValue && <p>{decodedValue}</p>}
       </div>
     </div>
+    <section>
+      <div>
+        <h2 className='text-center'>サイトの使い方の紹介</h2>
+        <p>このサイトでは、文字を入力することで、ラインの紹介テキストに変換することができます</p>
+        <p>使い方は、変換したい文章を一番上の場所に入力し、変換ボタンをタップするだけです</p>
+        <p>自動的にコピーされます</p>
+        <p>また、変換した文章を戻すことも可能です</p>
+        <p>上から2番めの場所に入力し変換ボタンを押すと直ります</p>
+        <p>ぜひ、お友達にも拡散してくださいね</p>
+      </div>
+    </section>
     <footer>
       <p className="text-center">©Aranpect</p>
     </footer>

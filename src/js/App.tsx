@@ -24,6 +24,14 @@ function App() {
     setDecodedValue(decoded);
   };
 
+  const handleClearClick = () =>{
+    setInputValue('');
+  }
+
+  const handleClear2Click = () =>{
+    setEncodedValue1('');
+  }
+
   return (
     <div>
     <header>
@@ -34,12 +42,14 @@ function App() {
         <p>下に変換したい文を入力</p>
         <input id="input" type="text" value={inputValue} onChange={handleInputChange} />
         <button onClick={handleEncodeClick}>変換する</button>
+        <button className='clear' onClick={handleClearClick}>入力をクリアします</button>
         {encodedValue && <p>{encodedValue}</p>}
       </div>
       <div className='width-50 right-color'>
         <p>下に直したい文章を入力</p>
         <input id="encoded" type="text" value={encodedValue1} onChange={(e) => setEncodedValue1(e.target.value)} />
         <button onClick={handleDecodeClick}>変換する</button>
+        <button className='clear' onClick={handleClear2Click}>入力をクリアします</button>
         {decodedValue && <p>{decodedValue}</p>}
       </div>
     </div>

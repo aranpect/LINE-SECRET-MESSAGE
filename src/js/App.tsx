@@ -55,7 +55,7 @@ function App() {
       </div>
     </section>
     <footer>
-      <p className="text-center">©Aranpect</p>
+      <p className="text-center">©2023 Aranpect all right reserved</p>
     </footer>
     </div>
   );

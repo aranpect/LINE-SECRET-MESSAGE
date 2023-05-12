@@ -32,7 +32,7 @@ body {
 }
 
 .width-50{
-  width: 90%;
+  width: 95%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 3px;
@@ -100,4 +100,16 @@ button {
   border-radius: 5px;
   /* カーソル */
   cursor: pointer;
+}
+
+.syoukai{
+  border: solid;
+  border-color: #000000;
+  border-radius: 5px;
+  margin: auto;
+  width: 90%;
+}
+
+h2{
+  font-size: 25px;
 }

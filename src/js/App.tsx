@@ -44,7 +44,7 @@ function App() {
       </div>
     </div>
     <section>
-      <div>
+      <div className="syoukai">
         <h2 className='text-center'>サイトの使い方の紹介</h2>
         <p>このサイトでは、文字を入力することで、ラインの紹介テキストに変換することができます</p>
         <p>使い方は、変換したい文章を一番上の場所に入力し、変換ボタンをタップするだけです</p>

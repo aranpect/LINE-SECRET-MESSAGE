@@ -20,6 +20,7 @@ function App() {
 
   const handleDecodeClick = () => {
     const decoded = decodeURIComponent(encodedValue1);
+    navigator.clipboard.writeText(decoded)
     Swal.fire("変換しコピーしました");
     setDecodedValue(decoded);
   };
@@ -32,6 +33,14 @@ function App() {
     setEncodedValue1('');
   }
 
+  const handleCameraClick = () =>{
+    navigator.clipboard.writeText("line://nv/camera")
+  }
+
+  const handleOpenChatClick = () =>{
+    navigator.clipboard.writeText("開発中です")
+  }
+
   return (
     <div>
     <header>
@@ -41,15 +50,15 @@ function App() {
       <div className='width-50 left-color'>
         <p>下に変換したい文を入力</p>
         <input id="input" type="text" value={inputValue} onChange={handleInputChange} />
-        <button onClick={handleEncodeClick}>変換する</button>
-        <button className='clear' onClick={handleClearClick}>入力をクリアします</button>
+        <button className="m-3" onClick={handleEncodeClick}>変換する</button>
+        <button className='clear m-3' onClick={handleClearClick}>入力をクリアします</button>
         {encodedValue && <p>{encodedValue}</p>}
       </div>
       <div className='width-50 right-color'>
         <p>下に直したい文章を入力</p>
         <input id="encoded" type="text" value={encodedValue1} onChange={(e) => setEncodedValue1(e.target.value)} />
-        <button onClick={handleDecodeClick}>変換する</button>
-        <button className='clear' onClick={handleClear2Click}>入力をクリアします</button>
+        <button className="m-3" onClick={handleDecodeClick}>変換する</button>
+        <button className='clear m-3' onClick={handleClear2Click}>入力をクリアします</button>
         {decodedValue && <p>{decodedValue}</p>}
       </div>
     </div>
@@ -69,12 +78,12 @@ function App() {
         <h2>その他のコマンド一覧とコピーボタン(開発中)</h2>
         <div className='flex'>
           <div className='w-1/2'>
-            <p>カメラ起動のコマンド</p>
-            <button className='mini-buttom'>クリックでコピー</button>
+            <p>カメラ起動</p>
+            <button onClick={handleCameraClick}>コピー</button>
           </div>
           <div className='w-1/2'>
-            <p>オープンチャット参加のコマンド</p>
-            <button className='mini-buttom'>クリックでコピー</button>
+            <p>オープンチャット参加</p>
+            <button onClick={handleOpenChatClick}>コピー</button>
           </div>
         </div>
       </div>

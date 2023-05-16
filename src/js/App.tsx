@@ -34,11 +34,13 @@ function App() {
   }
 
   const handleCameraClick = () =>{
-    navigator.clipboard.writeText("line://nv/camera")
+    navigator.clipboard.writeText("line://nv/camera/")
+    Swal.fire("コピーしました");
   }
 
   const handleOpenChatClick = () =>{
     navigator.clipboard.writeText("開発中です")
+    Swal.fire("開発中です");
   }
 
   return (
